@@ -50,25 +50,34 @@ body {
   opacity:0;
   transition: opacity .5s;
   filter: grayscale(100%);
+  /* filter: blur(2px); */
+  background-color: #eeeded;
+  /* background-color: #373737; */
+  /* background-color: #dfffff; */
+  background-position: center;
 }
 
 .bg1 {
-  background-image:url(img/8-a.gif);
-  background-size: 10vw;
+  background-image:url(img/loop5.gif);
+  background-size: 200px;
+  animation: drift 200s linear infinite;
+
 }
 
 .bg2 {
-  background-image:url(img/3.gif);
-  background-size: 200px;
+  background-image:url(img/loop4.gif);
+  background-size: 300px;
 }
 
 .bg3 {
-  background-image:url(img/2-a.gif);
-  background-size: 25vw 50vh;
+  background-image:url(img/eyes1.gif);
+  background-size: 300px;
+
+  /* background-size: 25vw 50vh; */
   /* background-size: 200px; */
   /* filter:blur(1px); */
   
-  animation: drift 100s linear infinite;
+  /* animation: drift 100s linear infinite; */
 }
 
 .active {
@@ -80,7 +89,7 @@ body {
     background-position: 0 0;
   }
   100% {
-    background-position: -50vw -100vh;
+    background-position: 50vw 100vh;
   }
 }
 
