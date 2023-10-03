@@ -49,7 +49,7 @@ body {
   z-index: -1;
   opacity:0;
   transition: opacity .5s;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   /* filter: blur(2px); */
   background-color: #eeeded;
   /* background-color: #373737; */
@@ -66,11 +66,30 @@ body {
 
 .bg2 {
   background-image:url(img/loop4.gif);
-  background-size: 300px;
+  background-size: 200px;
+  animation: drift 200s linear infinite;
+
 }
 
 .bg3 {
-  background-image:url(img/eyes1.gif);
+  background-image:url(img/loop3.gif);
+  background-size: 300px;
+
+  /* background-size: 25vw 50vh; */
+  /* background-size: 200px; */
+  /* filter:blur(1px); */
+  
+  /* animation: drift 100s linear infinite; */
+}
+
+.bg4 {
+  background-image:url(img/eyes-feat.gif);
+  background-size: 1800px;
+  background-repeat:no-repeat;
+}
+
+.bg5 {
+  background-image:url(img/eyes2.gif);
   background-size: 300px;
 
   /* background-size: 25vw 50vh; */
