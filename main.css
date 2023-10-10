@@ -57,50 +57,119 @@ body {
   background-position: center;
 }
 
-.bg1 {
+.title-bg {
   background-image:url(img/loop5.gif);
   background-size: 200px;
   animation: drift 200s linear infinite;
 
 }
 
-.bg2 {
+.drift-bg {
   background-image:url(img/loop4.gif);
   background-size: 200px;
   animation: drift 200s linear infinite;
 
 }
 
-.bg3 {
-  background-image:url(img/loop3.gif);
-  background-size: 300px;
-
-  /* background-size: 25vw 50vh; */
-  /* background-size: 200px; */
-  /* filter:blur(1px); */
-  
-  /* animation: drift 100s linear infinite; */
+.hd-bg {
+  background-image:url(img/hd-world.gif);
+  background-size: 600px;
 }
 
-.bg4 {
-  background-image:url(img/eyes-feat.gif);
+.eyes-bg {
+  background-image:url(img/eyes2-feat.gif);
   background-size: 1800px;
-  background-repeat:no-repeat;
 }
 
-.bg5 {
-  background-image:url(img/eyes2.gif);
-  background-size: 300px;
+.loss-bg {
+  background-image:url(img/loss.gif);
+  background-size: 600px;
+}
 
-  /* background-size: 25vw 50vh; */
-  /* background-size: 200px; */
-  /* filter:blur(1px); */
-  
-  /* animation: drift 100s linear infinite; */
+.failure-bg {
+  background-image:url(img/failure.gif);
+  background-size: 600px;
+}
+
+.goosepimples-bg {
+  background-image:url(img/goosepimples.gif);
+  background-size: 200px;
+}
+
+.labyrinth-bg {
+  background-image:url(img/labyrinth3-feat.gif);
+  background-size: 1300px;
+}
+
+.voice-bg {
+  background-image:url(img/hd-world.gif);
+  background-size: 600px;
+}
+
+.sunshine-bg {
+  background-image:url(img/loop4.gif);
+  background-size: 300px;
+}
+
+.night-bg {
+  background-image:url(img/hd-world.gif);
+  background-size: 600px;
+}
+
+.door-bg {
+  background-image:url(img/loop4.gif);
+  background-size: 300px;
+}
+
+.corridor-bg {
+  background-image:url(img/hd-world.gif);
+  background-size: 600px;
+}
+
+.vulva-bg {
+  background-image:url(img/loop4.gif);
+  background-size: 300px;
+}
+
+.awake-bg {
+  background-image:url(img/eyes2-feat.gif);
+  background-size: 1800px;
+}
+
+.fade-bg {
+  background-image:url(img/hd-world.gif);
+  background-size: 600px;
+}
+
+.blank-bg {
+  background-color: white;
+  background-size: 1300px;
+}
+
+.end-bg {
+  background-image:url(img/end.gif);
+  background-size: 300px;
 }
 
 .active {
   opacity:1;
+}
+
+.inactive {
+  opacity:0;
+  animation: destroy 1s linear;
+}
+
+@keyframes destroy {
+  0% {
+    display:block;
+  }
+  99% {
+    display:block;
+  }
+  100% {
+    display:none;
+  }
 }
 
 @keyframes drift {
@@ -143,6 +212,7 @@ h2 {
 p {
   font-size: 1.8rem;
   line-height: 150%;
+  margin-bottom:0;
 }
 
 img {
@@ -158,6 +228,10 @@ mark {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.text-break {
+  height:70vh
 }
 
 @media screen and (max-width:900px) {
