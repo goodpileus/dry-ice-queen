@@ -148,7 +148,8 @@ body {
 
 .end-bg {
   background-image:url(img/end.gif);
-  background-size: 300px;
+  background-size: 200px;
+  animation: drift 200s linear infinite;
 }
 
 .active {
