@@ -33,6 +33,7 @@ body {
     hyphens: auto;
     color:rgb(51, 43, 53);
     text-shadow: #ffffff 0 0 10px;
+    text-shadow: rgb(51, 43, 53) 0 0 1px;
     /* text-shadow:
      -2px -2px 3px #ffffff,  
       2px -2px 3px #ffffff,
@@ -107,8 +108,8 @@ body {
 }
 
 .sunshine-bg {
-  background-image:url(img/loop4.gif);
-  background-size: 300px;
+  background-image:url(img/sunshine.gif);
+  background-size: 600px;
 }
 
 .night-bg {
