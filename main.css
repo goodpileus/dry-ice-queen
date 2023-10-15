@@ -99,7 +99,7 @@ body {
 
 .labyrinth-bg {
   background-image:url(img/labyrinth3-feat.gif);
-  background-size: 1300px;
+  background-size: 1800px;
 }
 
 .voice-bg {
@@ -119,12 +119,12 @@ body {
 
 .door-bg {
   background-image:url(img/door.gif);
-  background-size: 1400px;
+  background-size: 1700px;
 }
 
 .corridor-bg {
-  background-image:url(img/hd-world.gif);
-  background-size: 600px;
+  background-image:url(img/corridor2.gif);
+  background-size: 1400px;
 }
 
 .vulva-bg {
@@ -133,13 +133,13 @@ body {
 }
 
 .awake-bg {
-  background-image:url(img/eyes2-feat.gif);
-  background-size: 1800px;
+  background-image:url(img/corridor2.gif);
+  background-size: 1400px;
 }
 
 .fade-bg {
-  background-image:url(img/hd-world.gif);
-  background-size: 600px;
+  background-image:url(img/fading.gif);
+  background-size: 1400px;
 }
 
 .blank-bg {
