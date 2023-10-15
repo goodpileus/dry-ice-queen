@@ -113,13 +113,13 @@ body {
 }
 
 .night-bg {
-  background-image:url(img/hd-world.gif);
-  background-size: 600px;
+  background-image:url(img/night.gif);
+  background-size: 500px;
 }
 
 .door-bg {
-  background-image:url(img/loop4.gif);
-  background-size: 300px;
+  background-image:url(img/door.gif);
+  background-size: 1400px;
 }
 
 .corridor-bg {
