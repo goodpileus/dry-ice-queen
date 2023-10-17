@@ -8,7 +8,7 @@
 
 ::selection,
 ::-moz-selection {
-  background:rgb(255, 255, 201);
+  background:rgba(255, 255, 201, 0.6);
 }
 
 @font-face {
@@ -21,7 +21,7 @@
 
 
 body {
-    margin:1.5rem;
+    /* margin:1.5rem; */
     margin-top:0;
     /* font-family: 'Libertinus mono', monospace; */
     /* font-family: 'Times New Roman', Times, serif; */
@@ -32,13 +32,18 @@ body {
     word-wrap: break-word;
     hyphens: auto;
     color:rgb(51, 43, 53);
-    text-shadow: #ffffff 0 0 10px;
-    text-shadow: rgb(51, 43, 53) 0 0 1px;
-    /* text-shadow:
+    /* text-shadow: #ffffff 0 0 10px; */
+    /* text-shadow: rgb(51, 43, 53) 0 0 1px; */
+    text-shadow:
      -2px -2px 3px #ffffff,  
       2px -2px 3px #ffffff,
       -2px 2px 3px #ffffff,
-       2px 2px 3px #ffffff; */
+       2px 2px 3px #ffffff;
+    /* text-shadow:
+     -3px -3px 3px #eeeded,  
+      3px -3px 3px #eeeded,
+      -3px 3px 3px #eeeded,
+       3px 3px 3px #eeeded; */
 }
 
 .bg {
@@ -61,7 +66,7 @@ body {
 .title-bg {
   background-image:url(img/loop5.gif);
   background-size: 200px;
-  animation: drift 200s linear infinite;
+  animation: drift 800s linear infinite;
 
 }
 
@@ -124,22 +129,22 @@ body {
 
 .corridor-bg {
   background-image:url(img/corridor2.gif);
-  background-size: 1400px;
+  background-size: 1500px;
 }
 
 .vulva-bg {
   background-image:url(img/corridor4.gif);
-  background-size: 1400px;
+  background-size: 1500px;
 }
 
 .awake-bg {
   background-image:url(img/corridor2.gif);
-  background-size: 1400px;
+  background-size: 1500px;
 }
 
 .fade-bg {
   background-image:url(img/fading.gif);
-  background-size: 1400px;
+  background-size: 1500px;
 }
 
 .blank-bg {
@@ -150,7 +155,7 @@ body {
 .end-bg {
   background-image:url(img/end.gif);
   background-size: 200px;
-  animation: drift 200s linear infinite;
+  animation: drift 800s linear infinite;
 }
 
 .active {
@@ -161,25 +166,12 @@ body {
   opacity:0;
   animation: destroy 1s linear;
 }
-
-@keyframes destroy {
-  0% {
-    display:block;
-  }
-  99% {
-    display:block;
-  }
-  100% {
-    display:none;
-  }
-}
-
 @keyframes drift {
   0% {
     background-position: 0 0;
   }
   100% {
-    background-position: 50vw 100vh;
+    background-position: 250vw 500vh;
   }
 }
 
@@ -188,6 +180,7 @@ main {
   margin:0 auto;
   /* background:white; */
   /* padding:3rem; */
+  padding:1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -199,16 +192,29 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size:170px;
+  font-size:10.6rem;
   line-height: 80%;
   margin-bottom:1rem;
   margin-top:0;
+  text-align: center;
 }
 
 h2 {
   font-size:1.3rem;
-  line-height: 150%;
+  line-height: 140%;
   text-align: left;
   font-family:'courier-bt', Courier, monospace;
+  text-align: center;
+}
+
+.author {
+  position: relative;  
+  margin-bottom: 2rem;
+  top: -16px;
+}
+
+.copy {
+  text-align: left;
 }
 
 p {
@@ -226,18 +232,115 @@ mark {
 }
 
 .title {
-  height:100vh;
+  min-height:100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-content: space-evenly;
+  /* padding:20px; */
 }
 
 .text-break {
   height:70vh
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:600px) {
   main {
-    margin:0 auto;
+    /* margin:0 auto; */
+    padding:1rem;
+  }
+
+  h1 {
+    font-size: 30vw;
+  }
+
+  h2 {
+    font-size:1.15rem;    
+    line-height: 130%;
+  }
+
+  .author {
+    top:0;
+    margin-top:2rem;
+  }
+
+  .copy {
+    font-size:.8rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 140%;
+  }
+
+
+  .title-bg {
+    background-size: 180px;
+  
+  }
+  
+  .drift-bg {
+    background-size: 180px;
+  
+  }
+  
+  .hd-bg {
+    background-size: 550px;
+  }
+  
+  .eyes-bg {
+    background-size: 250vw;
+  }
+  
+  .loss-bg {
+    background-size: 400px;
+  }
+  
+  .failure-bg {
+    background-size: 400px;
+  }
+  
+  .goosepimples-bg {
+    background-size: 200px;
+  }
+  
+  .labyrinth-bg {
+    background-size: 250vw;
+  }
+  
+  .voice-bg {
+    background-size: 400px;
+  }
+  
+  .sunshine-bg {
+    background-size: 400px;
+  }
+  
+  .night-bg {
+    background-size: 400px;
+  }
+  
+  .door-bg {
+    background-size: 330vw;
+  }
+  
+  .corridor-bg {
+    background-size: 330vw;
+  }
+  
+  .vulva-bg {
+    background-size: 330vw;
+  }
+  
+  .awake-bg {
+    background-size: 330vw;
+  }
+  
+  .fade-bg {
+    background-size: 330vw;
+  }
+  
+  .end-bg {
+    background-size: 180px;
   }
 }
