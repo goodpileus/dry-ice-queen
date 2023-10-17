@@ -68,7 +68,7 @@ body {
 .drift-bg {
   background-image:url(img/loop4.gif);
   background-size: 200px;
-  animation: drift 200s linear infinite;
+  /* animation: drift 200s linear infinite; */
 
 }
 
@@ -113,8 +113,8 @@ body {
 }
 
 .night-bg {
-  background-image:url(img/night.gif);
-  background-size: 500px;
+  background-image:url(img/night2.gif);
+  background-size: 600px;
 }
 
 .door-bg {
@@ -128,8 +128,8 @@ body {
 }
 
 .vulva-bg {
-  background-image:url(img/loop4.gif);
-  background-size: 300px;
+  background-image:url(img/corridor4.gif);
+  background-size: 1400px;
 }
 
 .awake-bg {
